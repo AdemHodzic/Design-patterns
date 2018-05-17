@@ -12,26 +12,21 @@ public class FullState implements State{
 
 	@Override
 	public void gotApplication() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Unfortunately, we are full.");
 	}
 
 	@Override
 	public void processApplication() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Unfortunately, we are full.");		
 	}
 
 	@Override
 	public void rentApartmant() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Unfortunately, we are full.");
 	}
 
 	@Override
 	public void dispenseKeys() {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

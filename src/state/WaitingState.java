@@ -12,25 +12,22 @@ public class WaitingState implements State{
 	@Override
 	public void gotApplication() {
 		System.out.println("Thank you for your application.");
-		
+		automat.setState(automat.getProcessingState());
 	}
 
 	@Override
 	public void processApplication() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("You need to submit application first");
 	}
 
 	@Override
 	public void rentApartmant() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("You need to submit application first");		
 	}
 
 	@Override
 	public void dispenseKeys() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("You need to submit application first");		
 	}
 
 	

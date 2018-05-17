@@ -13,25 +13,28 @@ public class ProcessingState implements State{
 
 	@Override
 	public void gotApplication() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Please wait while we are processing the application.");
 	}
 
 	@Override
 	public void processApplication() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Processing applicaiton...");
+		if(automat.getApartments() > 0) {
+			automat.setState(automat.getFreeState());
+		}else {
+			automat.setState(automat.getFullState());
+		}
 	}
 
 	@Override
 	public void rentApartmant() {
-		// TODO Auto-generated method stub
+		System.out.println("Please wait while we are processing the application.");
 		
 	}
 
 	@Override
 	public void dispenseKeys() {
-		// TODO Auto-generated method stub
+		System.out.println("Please wait while we are processing the application.");
 		
 	}
 

@@ -13,26 +13,23 @@ public class FreeState implements State{
 
 	@Override
 	public void gotApplication() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Please wait for your key.");
 	}
 
 	@Override
 	public void processApplication() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Please wait for your key.");
 	}
 
 	@Override
 	public void rentApartmant() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Congratulations.You got your apartment");
 	}
 
 	@Override
 	public void dispenseKeys() {
-		// TODO Auto-generated method stub
-		
+		automat.setApartments(automat.getApartments()-1);
+		automat.setState(automat.getWaitingState());
 	}
 
 }
